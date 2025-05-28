@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shandy Hotel</title>
+    <link rel="stylesheet" href="canteen.css">
+</head>
+<body>
+    <center>
+        <marquee behavior="" direction="">
+        <h1>SHANDY Hotel</h1>
+        </marquee>
+   <h2>WELCOME</h2>
+   <label for=""><h2>IDLI-RS 20 </h2></label>
+   <input type="text" name="" id="IDLI">
+   <br>
+   <br>
+   <label for=""><h2>ROTI-RS 30 </h2></label>
+   <input type="text" name="" id="ROTI">
+   <br>
+   <br>
+  <label for=""><h2>DOSA-RS 50 </h2></label>
+   <input type="text" name="" id="DOSA">
+   <br>
+   <br>
+   <label for=""><h2>POORI-RS 40 </h2></label>
+   <input type="text" name="" id="POORI">
+   <br>
+   <br>
+   <label for=""><h2>UPMA-RS 30 </h2></label>
+   <input type="text" name="" id="UPMA">
+   <br>
+   <br>   
+   <button onclick="bill()">submit</button>
+   </center>
+   <script>
+    function bill(){
+        var IDLI=document.getElementById("IDLI").value;
+        var ROTI=document.getElementById("ROTI").value;
+        var DOSA=document.getElementById("DOSA").value;
+        var POORI=document.getElementById("POORI").value;
+        var UPMA=document.getElementById("UPMA").value;
+        var total=IDLI*20+ROTI*30+DOSA*50+POORI*40+UPMA*30;
+        alert(total);
+    }
+   </script>
+</body>
+</html>
+

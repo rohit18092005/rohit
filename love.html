@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOVE PREDICTION</title>
+    <link rel="stylesheet" href="love.css">
+</head>
+<center>
+<body>
+    <h1>Love predictor</h1>
+    <label for="" style="font-size: 30pt;">Your name</label>
+    <input type="text" name="" id="uname" placeholder="enter your name">
+    <br>
+    <br>
+    
+    <button onclick="per()">check</button>
+    <p id="res"></p>
+    </center>
+    <script>
+        function per(){
+            var uname=document.getElementById("uname").value;
+            var per=Math.random()*100;
+            var res=document.getElementById("res");
+            res.innerHTML="The result is:"  +per;
+        }
+    </script>
+</body>
+</html>
